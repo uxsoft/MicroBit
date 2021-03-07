@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net5.0</TargetFramework>
+        <PackAsTool>true</PackAsTool>
+        <ToolCommandName>microbit</ToolCommandName>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="IntelHex.fs" />
+        <Compile Include="FileWatcher.fs" />
+        <Compile Include="MicroPythonSerial.fs" />
+        <Compile Include="Program.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Argu" Version="6.1.1" />
+      <PackageReference Include="System.IO.Ports" Version="5.0.0" />
+    </ItemGroup>
+
+</Project>
